@@ -93,6 +93,8 @@ function procesoDesencriptar(mensaje){
 /* Esta es la rutina del proceso de copiar que no me funciona */
 
 var textoFinal = document.getElementById("textoFinal")
+var botonCopiar = document.getElementById("botonCopiar")
+
 function copiarMensaje(){
     var copiarMensaje = document.getElementsByClassName(".textoFinal");
     return textoFinal;
