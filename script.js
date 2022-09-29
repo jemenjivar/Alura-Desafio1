@@ -8,7 +8,7 @@ var botonCopiar = document.querySelector(".botonCopiar")
 
 botonEncriptar.onclick = encriptarMensaje;
 botonDesencriptar.onclick = desencriptarMensaje;
-botonCopiar.onclick = copiarMensaje;
+botonCopiar.onclick = copiar;
 
 function encriptarMensaje(){
    desapareceFrente();
@@ -103,3 +103,9 @@ function limpiartextoFinal(){
   textoFinal.value = "";
 }
 
+function copiar(){
+  botonCopiar.addEventListener("click", () =>{
+    copiarMensaje();
+    limpiartextoFinal();
+  })
+}
