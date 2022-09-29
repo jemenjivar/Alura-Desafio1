@@ -96,6 +96,5 @@ var textoFinal = document.getElementById("textoFinal")
 var botonCopiar = document.getElementById("botonCopiar")
 
 function copiarMensaje(){
-    var copiarMensaje = document.getElementsByClassName(".textoFinal");
-    return textoFinal;
+    navigator.clipboard.writeText(textoFinal.value);
 }
